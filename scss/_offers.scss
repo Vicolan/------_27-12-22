@@ -1,0 +1,105 @@
+.offers {
+   padding: 5rem 0;
+
+   &__title {
+      margin-bottom: 8rem;
+   }
+
+   &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 15rem;
+      row-gap: 5rem;
+      justify-items: center;
+      margin: 0 auto;
+      max-width: 102rem;
+   }
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 23.7rem;
+      max-height: 21.1rem;
+      position: relative;
+      text-align: center;
+   }
+
+   &__icon {
+      position: absolute;
+      width: 6.5rem;
+      height: 6.5rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+
+   &__icon-1 {
+      background-image: url("../images/icons/offers/WIFI.svg");
+      width: 8rem;
+      height: 7rem;
+   }
+
+   &__icon-2 {
+      background-image: url("../images/icons/offers/Круглосуточно.svg");
+   }
+
+   &__icon-3 {
+      background-image: url("../images/icons/offers/Телевизор.svg");
+   }
+
+   &__icon-4 {
+      background-image: url("../images/icons/offers/Парковка.svg");
+   }
+
+   &__icon-5 {
+      background-image: url("../images/icons/offers/Влажная_уборка.svg");
+   }
+
+   &__icon-6 {
+      background-image: url("../images/icons/offers/Баня.svg");
+   }
+
+   &__icon-7 {
+      background-image: url("../images/icons/offers/Кухня.svg");
+   }
+
+   &__icon-8 {
+      background-image: url("../images/icons/offers/Банкет.svg");
+      width: 9rem;
+      height: 8rem;
+   }
+
+   &__icon-9 {
+      background-image: url("../images/icons/offers/Столовая.svg");
+   }
+
+   &__item-title {
+      padding-top: 8rem;
+      margin-bottom: 1.5rem;
+   }
+
+   .offer {
+      &__text {
+         font-weight: 400;
+         font-size: 1.4rem;
+         line-height: 141.18%;
+         letter-spacing: 0.03em;
+      }
+   }
+	@media screen and ( max-width: 575px){
+		&__wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			column-gap: 3rem;
+			justify-content: center;
+
+		}
+		&__item {
+			
+			max-width: 20rem;
+			max-height: 21.1rem;
+			;
+		}
+	}
+}

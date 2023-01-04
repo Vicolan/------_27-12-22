@@ -1,0 +1,38 @@
+$color-base: #686868;
+$color-accent-blue: #2f70d9;
+$color-accent-green: #a7d91a;
+$color-CTA: #d95845;
+
+.h2__title {
+   font-family: "Lora", serif;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 5rem;
+   line-height: 6.4rem;
+   letter-spacing: 0.03em;
+   color: $color-accent-blue;
+   position: relative;
+   display: inline-block;
+}
+.h2__title::before {
+   content: "";
+   position: absolute;
+   background: url("../images/icons/wave.svg") center / cover no-repeat;
+   width: 13rem;
+   height: 1.2rem;
+   top: 0;
+   right: 0;
+	@media screen and ( max-width: 400px) {
+		top: -1.5rem;
+		
+	}
+}
+.h4__title {
+   font-family: "Lora", serif;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 2rem;
+   line-height: 2.6rem;
+   letter-spacing: 0.03em;
+   color: $color-accent-blue;
+}

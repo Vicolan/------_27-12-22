@@ -1,0 +1,124 @@
+.footer {
+   padding-top: 4rem;
+   padding-bottom: 2.5rem;
+   background-color: #282828;
+   color: #fff;
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.7rem;
+   }
+
+   &__logo {
+      background: url("../images/icons/Логоf.svg") center / cover no-repeat;
+      width: 18rem;
+      height: 4.5rem;
+      background-color: transparent;
+   }
+
+   &__nav-item:not(:last-child) {
+      margin-bottom: 1.5rem;
+   }
+
+   &__nav-link {
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.03em;
+   }
+
+   &__form {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__btn,
+   &__btn-2 {
+      align-items: center;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.03em;
+      padding: 0.7rem 2.3rem;
+      border-radius: 0.5rem;
+      max-width: 23rem;
+   }
+   &__btn {
+      margin-bottom: 1.5rem;
+   }
+   &-title {
+      font-family: "Lora", serif;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 2.6r;
+      letter-spacing: 0.03em;
+      color: $color-accent-blue;
+      margin-bottom: 2rem;
+   }
+
+   .contacts {
+      display: flex;
+      flex-direction: column;
+      &__subtitle {
+         font-weight: 700;
+         font-size: 1.8rem;
+         line-height: 140%;
+         letter-spacing: 0.05em;
+         margin-bottom: 0.5rem;
+      }
+
+      &__text {
+         font-size: 1.6rem;
+         line-height: 141.18%;
+         letter-spacing: 0.03em;
+         margin-bottom: 1.5rem;
+      }
+
+      &__tel {
+         display: flex;
+         flex-direction: column;
+         font-size: 2rem;
+         line-height: 2.7rem;
+         letter-spacing: 0.03em;
+         color: #fff;
+      }
+
+      &__tel-1 {
+         margin-bottom: 0.5rem;
+      }
+
+      &__tel-2 {
+         margin-bottom: 1.5rem;
+      }
+
+      &__icon {
+         width: 3rem;
+         height: 3rem;
+      }
+
+      &__icon-viber {
+         margin-right: 1rem;
+      }
+   }
+   &__copyright {
+      text-align: center;
+   }
+	@media screen and ( max-width: 575px){
+		&__wrapper {
+			flex-direction: column;
+			align-items: center;
+			row-gap: 3rem;
+		}
+	}
+}
+
+.main {
+   display: flex;
+   background: url("../images/icons/arrow_top.svg") center / cover no-repeat;
+   width: 4rem;
+   height: 4rem;
+   align-self: center;
+}
+@media (prefers-reduced-motion: no-preference) {
+	:root {
+	  scroll-behavior: smooth;
+	}
+ }

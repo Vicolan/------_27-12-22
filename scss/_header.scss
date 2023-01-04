@@ -1,0 +1,274 @@
+.header {
+   padding-top: 0.1rem;
+   padding-bottom: 5rem;
+   &__menu {
+      // display: flex;
+      // flex-direction: column;
+      display: none;
+   }
+   &__menu--open {
+      display: block;
+   }
+}
+.menu {
+   &__list {
+      max-width: 21rem;
+   }
+   &__item {
+      margin-bottom: 2rem;
+   }
+   &__link::after {
+      content: "";
+      position: absolute;
+      width: 9.8rem;
+      height: 1rem;
+      top: 1rem;
+      right: -12rem;
+      background: url("../images/icons/wave_blye-mob.svg") center / cover
+         no-repeat;
+      color: $color-accent-blue;
+      transition: all 1s;
+      z-index: -1;
+      opacity: 0;
+      transform: translateX(-100%);
+   }
+
+   &__link:hover::after {
+      opacity: 1;
+      transform: translateX(0);
+   }
+   &__link:hover {
+      color: $color-accent-blue;
+      font-weight: 800;
+   }
+   &__link {
+      display: inline-block;
+      position: relative;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.03em;
+      color: $color-base;
+   }
+
+   &__btn {
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.03em;
+      margin-bottom: 4rem;
+      border-radius: 0.5rem;
+      width: 21rem;
+      height: 4rem;
+   }
+
+   &__wrapper {
+      max-width: 17.5rem;
+   }
+
+   &__subtitle {
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 140%;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+   }
+
+   &__text {
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 141.18%;
+      letter-spacing: 0.03em;
+      margin-bottom: 1.5rem;
+   }
+
+   &__tel {
+      font-size: 2rem;
+      line-height: 2.7rem;
+      letter-spacing: 0.03em;
+      color: #000;
+      display: inline-block;
+   }
+
+   &__tel-1 {
+      margin-bottom: 0.5rem;
+   }
+
+   &__tel-2 {
+      margin-bottom: 1.5rem;
+   }
+
+   &__icon {
+      display: flex;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 0.5rem;
+      width: 6rem;
+      height: 6rem;
+   }
+
+   &__icon-viber {
+      margin-right: 0.5rem;
+      background-image: url("../images/icons/viber.svg");
+   }
+
+   &__icon-whatsup {
+      background-image: url("../images/icons/whatsup.svg");
+   }
+}
+
+.top {
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__logo {
+      background: url("../images/icons/logo_light.png") center / cover no-repeat;
+      width: 20rem;
+      height: 10rem;
+      margin-right: 15rem;
+   }
+
+   &__nav-list {
+      display: flex;
+   }
+   &__nav-item {
+      position: relative;
+      color: $color-base;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   &__nav-item:not(:last-child) {
+      margin-right: 3rem;
+   }
+
+   &__nav-link {
+      display: inline-block;
+      position: relative;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.03em;
+   }
+   &__nav-link:hover {
+      font-weight: 800;
+      text-decoration: underline;
+      text-decoration-style: wavy;
+      text-decoration-color: $color-accent-blue;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 1rem;
+      color: $color-accent-blue;
+   }
+   &__nav-link::after {
+      content: attr(title);
+      display: block;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+      font-weight: 800;
+   }
+   &__btn {
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      letter-spacing: 0.03em;
+      padding: 0.8rem 2rem 0.7rem 1.9rem;
+   }
+
+   @media screen and (max-width: 992px) {
+      &__nav {
+         display: none;
+      }
+      &__btn {
+         display: none;
+      }
+   }
+}
+.mob-close {
+   display: none;
+}
+.mob-open {
+   display: none;
+}
+
+@media screen and (max-width: 992px) {
+   .mob-open {
+      display: block;
+   }
+
+   .mob-open--close {
+      display: none;
+   }
+
+   .mob-close--open {
+      background: url("../images/icons/menu-mob-close.svg");
+      display: block;
+      width: 3rem;
+      height: 3rem;
+      z-index: 10;
+   }
+}
+
+.header {
+   &__hero {
+      padding-top: 8.1rem;
+   }
+   @media screen and (max-width: 992px) {
+      padding-bottom: 0;
+   }
+}
+
+.hero {
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+   }
+   &__wrapper--close {
+      display: none;
+   }
+   &__descr {
+      padding-top: 2rem;
+      padding-bottom: 0.5rem;
+      max-width: 51rem;
+   }
+   &__image {
+      max-width: 70.6rem;
+      height: auto;
+   }
+   &__img {
+      width: 100%;
+      object-fit: cover;
+   }
+   &__title {
+      background: url("../images/hero-title.svg") center / cover no-repeat;
+      max-width: 49.9rem;
+      height: 11.7rem;
+      margin-bottom: 4rem;
+   }
+
+   &__text {
+      margin-bottom: 5.7rem;
+   }
+
+   &__btn {
+      font-size: 22px;
+      line-height: 30px;
+      padding: 1.7rem 4.9rem;
+   }
+   @media screen and (max-width: 768px) {
+      &__title {
+         background: url("../images/hero-title_575.svg") center / cover
+            no-repeat;
+         max-width: 26.7rem;
+         height: 6.2rem;
+      }
+      &__wrapper {
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+}

@@ -1,0 +1,32 @@
+html {
+   font-size: 62.5%;
+	@media screen and ( max-width: 1280px){
+		font-size: 52%;
+	}
+	@media screen and ( max-width: 1066px){
+		font-size: 40%;
+	}
+	// @media screen and ( max-width: 575px){
+	// 	font-size: 37.5%;
+	// }
+}
+body {
+   font-family: "Open Sans", sans-serif;
+   font-weight: 400;
+   font-size: 1.6rem;
+   line-height: 141.18%;
+   letter-spacing: 0.03em;
+   color: $color-base;
+}
+
+.container {
+   max-width: 128.6rem;
+   width: 100%;
+   padding: 0 1.5rem;
+   margin: 0 auto;
+}
+@media screen and ( max-width: 575px) {
+	body {
+		font-size: 2rem;
+	}
+}

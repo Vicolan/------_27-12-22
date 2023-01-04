@@ -1,0 +1,101 @@
+.popup__bg {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background: rgba(0, 0, 0, 0.5);
+   opacity: 0;
+   pointer-events: none;
+   transition: 0.5s all;
+}
+
+.popup__bg.active {
+   opacity: 1;
+   pointer-events: all;
+   transition: 0.5s all;
+}
+.close-popup {
+   display: none;
+}
+
+.form {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   padding: 4rem 6rem;
+   width: 60.8rem;
+   height: 52.5rem;
+   z-index: 2;
+   background-color: #fff;
+   box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+   border-radius: 2rem;
+
+   .form.active {
+      display: block;
+   }
+   &__title {
+      margin-bottom: 1.5rem;
+   }
+   &__text {
+      font-size: 1.6rem;
+      line-height: 141.18%;
+      letter-spacing: 0.03em;
+      margin-bottom: 2rem;
+   }
+   &__input {
+      font: inherit;
+      margin-bottom: 1rem;
+      box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+      border-radius: 1rem;
+      flex: 1 1;
+   }
+   &__area {
+      height: 9.8rem;
+      box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+   }
+   &__btn {
+      font-weight: 700;
+      font-size: 2.2rem;
+      line-height: 3rem;
+      letter-spacing: 0.03em;
+      padding: 1.8rem 7.7rem;
+      max-width: 28.5rem;
+      margin: 0 auto;
+   }
+}
+@media screen and (max-width: 400px) {
+   .form {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      padding: 3.5rem 1.1rem;
+      width: 41rem;
+      //height: 40r;
+      z-index: 2;
+      background-color: #fff;
+      box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+      border-radius: 2rem;
+		&__title {
+      	font-weight: 700;
+      	font-size: 3rem;
+      	line-height: 2.6rem;
+      	letter-spacing: 0.03em;
+			
+   }
+		&__top {
+			text-align: center;
+		}
+   }
+   	
+}

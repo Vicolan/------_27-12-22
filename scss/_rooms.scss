@@ -1,0 +1,115 @@
+.rooms {
+   padding: 5rem 0;
+
+   &__title {
+      margin-bottom: 8rem;
+   }
+
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+   }
+   &__image {
+      align-self: center;
+   }
+
+   &__cards {
+      display: flex;
+      font-size: 1.6r;
+      line-height: 141.18%;
+      text-align: center;
+      letter-spacing: 0.03em;
+   }
+
+   &__card {
+      position: relative;
+      border: 3px solid $color-accent-blue;
+      border-radius: 20px;
+      width: 28.5rem;
+      height: 57rem;
+      align-items: center;
+      padding-top: 18rem;
+   }
+   &__card:not(:last-child) {
+      margin-right: 3rem;
+   }
+	@media screen and ( max-width: 400px) {
+		&__image {
+			display: none;
+		}
+	}
+}
+
+.card-icon {
+   display: block;
+   position: absolute;
+   width: 6.5rem;
+   height: 6.5rem;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   top: 4rem;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.card-icon-1 {
+   background-image: url("../images/icons/rooms/room-1.svg");
+   width: 17rem;
+   height: 11rem;
+}
+.card-icon-2 {
+   background-image: url("../images/icons/rooms/room-2.svg");
+   width: 23rem;
+   height: 11rem;
+}
+.card-title {
+   margin-bottom: 3rem;
+}
+
+.card-list {
+   margin-bottom: 3rem;
+   text-align: left;
+   padding-left: 5.1rem;
+   padding-right: 3.1rem;
+}
+.card-point {
+   list-style-type: disc;
+}
+
+.card-point:not(:last-child) {
+   margin-bottom: 1.3rem;
+}
+.card-subtitle {
+   font-family: "Lora", serif;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 1.6rem;
+   line-height: 2rem;
+   letter-spacing: 0.03em;
+   color: $color-accent-blue;
+   margin-bottom: 1rem;
+}
+.card-price {
+   font-family: "Lora", serif;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 2.5rem;
+   line-height: 3.2rem;
+   letter-spacing: 0.03em;
+   color: $color-CTA;
+}
+@media screen and ( max-width: 1280px){
+	.rooms__wrapper {
+		flex-direction: column;
+		align-items: center;
+		row-gap: 3rem;
+	}
+}
+@media screen and ( max-width: 400px){
+	.rooms__cards {
+		flex-direction: column;
+		row-gap: 3rem;
+		
+	}
+	
+}

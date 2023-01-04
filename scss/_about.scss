@@ -1,0 +1,66 @@
+.about {
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+   position: relative;
+
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__title {
+      margin-bottom: 14.4rem;
+   }
+
+   &__text:not(:last-child) {
+      margin-bottom: 2rem;
+   }
+   &__text:last-child {
+      margin-bottom: 16rem;
+   }
+  
+
+   &__descr {
+      max-width: 42rem;
+      position: relative;
+   }
+   &__descr::after {
+      content: "";
+      position: absolute;
+      background: url("../images/icons/wave_blye.svg") center / cover no-repeat;
+      width: 9.8rem;
+      height: 0.9rem;
+      bottom: 0;
+      left: 0;
+   }
+   &__image {
+      align-self: flex-end;
+		max-width: 81rem;
+		height: auto;
+   }
+	&__img {
+		width: 100%;
+		object-fit: contain;
+	}
+	@media screen and ( max-width: 1110px){
+		&__wrapper {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__image {
+			align-self: center;
+		}
+}
+@media screen and (max-width: 992px) {
+	padding-top: 0;
+	&__title {
+      margin-bottom: 4rem;
+   }
+	&__text:last-child {
+      margin-bottom: 3rem;
+   }
+	&__image {
+      padding-top: 2rem;
+   }
+}
+}
